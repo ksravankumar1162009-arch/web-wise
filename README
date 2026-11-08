@@ -1,1 +1,12 @@
+# WebWise
 
+A beginner-friendly HTML and CSS quiz website.
+
+Features:
+- Sign-in and registration demo
+- Welcome page with instructions
+- 16 topics and 80 questions
+- One question at a time
+- Final score and retry option
+
+Built using HTML, CSS and JavaScript.
