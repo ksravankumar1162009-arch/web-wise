@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html lang="en" class="quiz-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Web Wise</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="auth.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body id="top">
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="logo" href="#top">&lt;/&gt; Web Quiz</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#topics">Topics</a>
+      <a href="#how-to-play">How to play</a>
+      <button id="signout-btn" class="secondary" type="button">
+  Sign out
+</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <p class="eyebrow">LEARN • PRACTISE • IMPROVE</p>
+
+      <h1>Web Wise</h1>
+
+      <p>
+        A little practice goes a long way. Test what you know
+        about HTML and the web, one topic at a time.
+      </p>
+
+      <a class="button" href="#topics">Choose a topic ↓</a>
+
+      <p class="quiz-facts">
+         16 topics / 80 questions / Beginner friendly
+      </p>
+
+    <!-- Instructions -->
+    <section id="how-to-play" class="instructions">
+      <h2>How to play</h2>
+
+      <ol>
+        <li>Choose a topic below.</li>
+        <li>Answer its five questions.</li>
+        <li>Check your score and review the answers.</li>
+      </ol>
+    </section>
+
+    <!-- Quiz topics -->
+    <section id="topics">
+      <p class="eyebrow">YOUR PRACTICE STARTS HERE</p>
+
+      <h2>Pick a topic</h2>
+
+      <p class="muted">
+        Open any topic to start. There is no timer, so take your time.
+      </p>
+
+      <div class="topic-grid">
+
+        <!--
+          data-answer stores the correct option:
+          0 = first, 1 = second, 2 = third, 3 = fourth.
+        -->
+
+        <!-- Topic 1 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">01</span>
+
+            <span class="topic-title">
+              Internet &amp; Web Basics
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="0">
+              <legend>1. What is the Internet?</legend>
+
+              <label>
+                <input type="radio" name="t1q1" value="0" required>
+                <span>A global network of connected networks</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q1" value="1">
+                <span>One large website</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q1" value="2">
+                <span>A programming language</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q1" value="3">
+                <span>A web browser</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>2. What is the World Wide Web?</legend>
+
+              <label>
+                <input type="radio" name="t1q2" value="0" required>
+                <span>Another name for every computer</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q2" value="1">
+                <span>A service that uses the Internet to access linked resources</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q2" value="2">
+                <span>A type of keyboard</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q2" value="3">
+                <span>An operating system</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>3. Which application is commonly used to open websites?</legend>
+
+              <label>
+                <input type="radio" name="t1q3" value="0" required>
+                <span>Compiler</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q3" value="1">
+                <span>Calculator</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q3" value="2">
+                <span>Web browser</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q3" value="3">
+                <span>File compressor</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>4. In a client-server model, what does a client usually do first?</legend>
+
+              <label>
+                <input type="radio" name="t1q4" value="0" required>
+                <span>Create a domain name</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q4" value="1">
+                <span>Turn off the server</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q4" value="2">
+                <span>Write the server's code</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q4" value="3">
+                <span>Send a request for a resource</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>5. What does URL stand for?</legend>
+
+              <label>
+                <input type="radio" name="t1q5" value="0" required>
+                <span>Universal Reading Link</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q5" value="1">
+                <span>Uniform Resource Locator</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q5" value="2">
+                <span>User Reference List</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t1q5" value="3">
+                <span>United Routing Language</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 2 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">02</span>
+
+            <span class="topic-title">
+              HTML Document Structure
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="2">
+              <legend>1. What should the first line of a modern HTML document usually be?</legend>
+
+              <label>
+                <input type="radio" name="t2q1" value="0" required>
+                <span>&lt;head&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q1" value="1">
+                <span>&lt;body&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q1" value="2">
+                <span>&lt;!DOCTYPE html&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q1" value="3">
+                <span>&lt;title&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>2. Which element contains the page's main visible content?</legend>
+
+              <label>
+                <input type="radio" name="t2q2" value="0" required>
+                <span>&lt;body&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q2" value="1">
+                <span>&lt;head&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q2" value="2">
+                <span>&lt;meta&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q2" value="3">
+                <span>&lt;title&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>3. Which element sets the text shown in the browser tab?</legend>
+
+              <label>
+                <input type="radio" name="t2q3" value="0" required>
+                <span>&lt;h1&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q3" value="1">
+                <span>&lt;header&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q3" value="2">
+                <span>&lt;caption&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q3" value="3">
+                <span>&lt;title&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>4. Which element contains metadata and links to stylesheets?</legend>
+
+              <label>
+                <input type="radio" name="t2q4" value="0" required>
+                <span>&lt;footer&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q4" value="1">
+                <span>&lt;head&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q4" value="2">
+                <span>&lt;main&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q4" value="3">
+                <span>&lt;article&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>5. Which meta setting is commonly used for correct text encoding?</legend>
+
+              <label>
+                <input type="radio" name="t2q5" value="0" required>
+                <span>&lt;meta charset="UTF-8"&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q5" value="1">
+                <span>&lt;meta image="UTF-8"&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q5" value="2">
+                <span>&lt;charset&gt;UTF-8&lt;/charset&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t2q5" value="3">
+                <span>&lt;encoding&gt;UTF-8&lt;/encoding&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 3 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">03</span>
+
+            <span class="topic-title">
+              Elements &amp; Attributes
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="1">
+              <legend>1. What is an HTML element commonly made from?</legend>
+
+              <label>
+                <input type="radio" name="t3q1" value="0" required>
+                <span>Only a CSS rule</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q1" value="1">
+                <span>A tag and its content, where applicable</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q1" value="2">
+                <span>Only a file name</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q1" value="3">
+                <span>A database table</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>2. What does the href attribute specify on an anchor element?</legend>
+
+              <label>
+                <input type="radio" name="t3q2" value="0" required>
+                <span>Text size</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q2" value="1">
+                <span>Image alternative text</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q2" value="2">
+                <span>The link destination</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q2" value="3">
+                <span>The page language</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>3. Which attribute should be unique for one element on a page?</legend>
+
+              <label>
+                <input type="radio" name="t3q3" value="0" required>
+                <span>class</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q3" value="1">
+                <span>style</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q3" value="2">
+                <span>title</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q3" value="3">
+                <span>id</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>4. Which attribute can be shared by several elements for styling?</legend>
+
+              <label>
+                <input type="radio" name="t3q4" value="0" required>
+                <span>class</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q4" value="1">
+                <span>doctype</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q4" value="2">
+                <span>charset</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q4" value="3">
+                <span>alt</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>5. Which is a valid example of a boolean HTML attribute?</legend>
+
+              <label>
+                <input type="radio" name="t3q5" value="0" required>
+                <span>href="false"</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q5" value="1">
+                <span>disabled</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q5" value="2">
+                <span>color="none"</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t3q5" value="3">
+                <span>id="true"</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 4 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">04</span>
+
+            <span class="topic-title">
+              Text &amp; Headings
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="2">
+              <legend>1. Which heading element represents the highest-level heading?</legend>
+
+              <label>
+                <input type="radio" name="t4q1" value="0" required>
+                <span>&lt;h6&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q1" value="1">
+                <span>&lt;heading&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q1" value="2">
+                <span>&lt;h1&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q1" value="3">
+                <span>&lt;head&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>2. Which element marks text as strongly important?</legend>
+
+              <label>
+                <input type="radio" name="t4q2" value="0" required>
+                <span>&lt;strong&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q2" value="1">
+                <span>&lt;big&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q2" value="2">
+                <span>&lt;bold&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q2" value="3">
+                <span>&lt;marking&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>3. Which element gives text emphasis, often displayed in italics?</legend>
+
+              <label>
+                <input type="radio" name="t4q3" value="0" required>
+                <span>&lt;em&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q3" value="1">
+                <span>&lt;italicize&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q3" value="2">
+                <span>&lt;i-text&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q3" value="3">
+                <span>&lt;stress&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>4. Which element creates a paragraph?</legend>
+
+              <label>
+                <input type="radio" name="t4q4" value="0" required>
+                <span>&lt;para&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q4" value="1">
+                <span>&lt;text&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q4" value="2">
+                <span>&lt;p&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q4" value="3">
+                <span>&lt;pg&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>5. Which element represents a thematic break between content?</legend>
+
+              <label>
+                <input type="radio" name="t4q5" value="0" required>
+                <span>&lt;breakline&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q5" value="1">
+                <span>&lt;hr&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q5" value="2">
+                <span>&lt;line&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t4q5" value="3">
+                <span>&lt;separator&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 5 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">05</span>
+
+            <span class="topic-title">
+              Lists &amp; Links
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="3">
+              <legend>1. Which element creates a numbered list?</legend>
+
+              <label>
+                <input type="radio" name="t5q1" value="0" required>
+                <span>&lt;ul&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q1" value="1">
+                <span>&lt;li&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q1" value="2">
+                <span>&lt;dl&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q1" value="3">
+                <span>&lt;ol&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>2. Which element creates a bulleted list by default?</legend>
+
+              <label>
+                <input type="radio" name="t5q2" value="0" required>
+                <span>&lt;ul&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q2" value="1">
+                <span>&lt;ol&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q2" value="2">
+                <span>&lt;list&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q2" value="3">
+                <span>&lt;li&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>3. Which element marks an item inside an ordered or unordered list?</legend>
+
+              <label>
+                <input type="radio" name="t5q3" value="0" required>
+                <span>&lt;item&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q3" value="1">
+                <span>&lt;li&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q3" value="2">
+                <span>&lt;list-item&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q3" value="3">
+                <span>&lt;dt&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>4. Which element creates a hyperlink?</legend>
+
+              <label>
+                <input type="radio" name="t5q4" value="0" required>
+                <span>&lt;linkto&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q4" value="1">
+                <span>&lt;href&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q4" value="2">
+                <span>&lt;a&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q4" value="3">
+                <span>&lt;url&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>5. Which attribute provides alternative text for an image?</legend>
+
+              <label>
+                <input type="radio" name="t5q5" value="0" required>
+                <span>src</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q5" value="1">
+                <span>href</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q5" value="2">
+                <span>title</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t5q5" value="3">
+                <span>alt</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 6 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">06</span>
+
+            <span class="topic-title">
+              Images &amp; Multimedia
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="0">
+              <legend>1. Which attribute tells an image element where its image file is?</legend>
+
+              <label>
+                <input type="radio" name="t6q1" value="0" required>
+                <span>src</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q1" value="1">
+                <span>href</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q1" value="2">
+                <span>source-text</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q1" value="3">
+                <span>link</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>2. Which element is designed to play video in HTML?</legend>
+
+              <label>
+                <input type="radio" name="t6q2" value="0" required>
+                <span>&lt;movie&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q2" value="1">
+                <span>&lt;media&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q2" value="2">
+                <span>&lt;video&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q2" value="3">
+                <span>&lt;play&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>3. Which element can play audio content?</legend>
+
+              <label>
+                <input type="radio" name="t6q3" value="0" required>
+                <span>&lt;sound&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q3" value="1">
+                <span>&lt;audio&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q3" value="2">
+                <span>&lt;music&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q3" value="3">
+                <span>&lt;mp3&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>4. What does the controls attribute add to audio or video?</legend>
+
+              <label>
+                <input type="radio" name="t6q4" value="0" required>
+                <span>Automatic captions only</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q4" value="1">
+                <span>A download folder</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q4" value="2">
+                <span>A page title</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q4" value="3">
+                <span>Built-in playback controls</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>5. Why should meaningful images have useful alt text?</legend>
+
+              <label>
+                <input type="radio" name="t6q5" value="0" required>
+                <span>It improves accessibility when the image cannot be seen</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q5" value="1">
+                <span>It guarantees the image loads faster</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q5" value="2">
+                <span>It adds a border</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t6q5" value="3">
+                <span>It changes the file format</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 7 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">07</span>
+
+            <span class="topic-title">
+              Semantic HTML &amp; Layout
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="1">
+              <legend>1. What is a key benefit of semantic HTML?</legend>
+
+              <label>
+                <input type="radio" name="t7q1" value="0" required>
+                <span>It automatically writes JavaScript</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q1" value="1">
+                <span>It gives content meaningful structure</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q1" value="2">
+                <span>It removes the need for CSS</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q1" value="3">
+                <span>It guarantees a top search ranking</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>2. Which element should contain the dominant unique content of a page?</legend>
+
+              <label>
+                <input type="radio" name="t7q2" value="0" required>
+                <span>&lt;aside&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q2" value="1">
+                <span>&lt;footer&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q2" value="2">
+                <span>&lt;main&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q2" value="3">
+                <span>&lt;small&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>3. Which element is suitable for introductory content or navigation aids?</legend>
+
+              <label>
+                <input type="radio" name="t7q3" value="0" required>
+                <span>&lt;header&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q3" value="1">
+                <span>&lt;strong&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q3" value="2">
+                <span>&lt;data&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q3" value="3">
+                <span>&lt;br&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>4. Which element is suitable for a self-contained blog post?</legend>
+
+              <label>
+                <input type="radio" name="t7q4" value="0" required>
+                <span>&lt;span&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q4" value="1">
+                <span>&lt;input&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q4" value="2">
+                <span>&lt;label&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q4" value="3">
+                <span>&lt;article&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>5. Which element is appropriate for related but secondary content, such as a sidebar?</legend>
+
+              <label>
+                <input type="radio" name="t7q5" value="0" required>
+                <span>&lt;main&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q5" value="1">
+                <span>&lt;aside&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q5" value="2">
+                <span>&lt;title&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t7q5" value="3">
+                <span>&lt;time&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 8 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">08</span>
+
+            <span class="topic-title">
+              Forms &amp; Inputs
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="0">
+              <legend>1. Which element groups controls that submit information?</legend>
+
+              <label>
+                <input type="radio" name="t8q1" value="0" required>
+                <span>&lt;form&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q1" value="1">
+                <span>&lt;fieldset-only&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q1" value="2">
+                <span>&lt;input-group&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q1" value="3">
+                <span>&lt;data&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>2. Which input type is intended for email addresses?</legend>
+
+              <label>
+                <input type="radio" name="t8q2" value="0" required>
+                <span>type="mailbox"</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q2" value="1">
+                <span>type="text-email"</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q2" value="2">
+                <span>type="email"</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q2" value="3">
+                <span>type="address"</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>3. Which attribute makes a form field mandatory in browser validation?</legend>
+
+              <label>
+                <input type="radio" name="t8q3" value="0" required>
+                <span>important</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q3" value="1">
+                <span>required</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q3" value="2">
+                <span>mustfill</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q3" value="3">
+                <span>validate</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>4. How is a label associated with an input whose id is username?</legend>
+
+              <label>
+                <input type="radio" name="t8q4" value="0" required>
+                <span>&lt;label name="username"&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q4" value="1">
+                <span>&lt;label id="username"&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q4" value="2">
+                <span>&lt;label href="username"&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q4" value="3">
+                <span>&lt;label for="username"&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>5. Why is placeholder text not a replacement for a proper label?</legend>
+
+              <label>
+                <input type="radio" name="t8q5" value="0" required>
+                <span>It always changes the input value</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q5" value="1">
+                <span>It cannot be displayed in a browser</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q5" value="2">
+                <span>It may disappear and may not provide a persistent accessible label</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t8q5" value="3">
+                <span>It prevents typing</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 9 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">09</span>
+
+            <span class="topic-title">
+              Tables &amp; Data
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="0">
+              <legend>1. Which element starts an HTML table?</legend>
+
+              <label>
+                <input type="radio" name="t9q1" value="0" required>
+                <span>&lt;table&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q1" value="1">
+                <span>&lt;tab&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q1" value="2">
+                <span>&lt;grid&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q1" value="3">
+                <span>&lt;tbody-only&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>2. Which element represents a table row?</legend>
+
+              <label>
+                <input type="radio" name="t9q2" value="0" required>
+                <span>&lt;td&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q2" value="1">
+                <span>&lt;tr&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q2" value="2">
+                <span>&lt;th&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q2" value="3">
+                <span>&lt;row&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>3. Which element is typically used for a table header cell?</legend>
+
+              <label>
+                <input type="radio" name="t9q3" value="0" required>
+                <span>&lt;theadcell&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q3" value="1">
+                <span>&lt;head&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q3" value="2">
+                <span>&lt;th&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q3" value="3">
+                <span>&lt;caption&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>4. Which element contains a standard data cell?</legend>
+
+              <label>
+                <input type="radio" name="t9q4" value="0" required>
+                <span>&lt;cell&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q4" value="1">
+                <span>&lt;data-cell&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q4" value="2">
+                <span>&lt;tc&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q4" value="3">
+                <span>&lt;td&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>5. What is the purpose of the caption element in a table?</legend>
+
+              <label>
+                <input type="radio" name="t9q5" value="0" required>
+                <span>To provide a table title or description</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q5" value="1">
+                <span>To merge all cells</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q5" value="2">
+                <span>To add a form</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t9q5" value="3">
+                <span>To create a new row automatically</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+        <!-- Topic 10 -->
+        <details class="topic-card">
+          <summary>
+            <span class="topic-number">10</span>
+
+            <span class="topic-title">
+              Accessibility &amp; Responsive Basics
+              <small>5 questions · Multiple choice</small>
+            </span>
+
+            <span class="open-icon" aria-hidden="true">+</span>
+          </summary>
+
+          <form class="quiz-form">
+            <fieldset data-answer="1">
+              <legend>1. What does WCAG stand for?</legend>
+
+              <label>
+                <input type="radio" name="t10q1" value="0" required>
+                <span>Web Coding And Graphics</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q1" value="1">
+                <span>Web Content Accessibility Guidelines</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q1" value="2">
+                <span>World Computer Access Group</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q1" value="3">
+                <span>Website Controls And Grid</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="2">
+              <legend>2. Which meta tag setting helps a page adapt to mobile screen width?</legend>
+
+              <label>
+                <input type="radio" name="t10q2" value="0" required>
+                <span>&lt;meta mobile="yes"&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q2" value="1">
+                <span>&lt;meta screen="auto"&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q2" value="2">
+                <span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q2" value="3">
+                <span>&lt;meta device="responsive"&gt;</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="3">
+              <legend>3. Which practice helps people navigate a website without a mouse?</legend>
+
+              <label>
+                <input type="radio" name="t10q3" value="0" required>
+                <span>Removing focus indicators</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q3" value="1">
+                <span>Using only hover actions</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q3" value="2">
+                <span>Making every control a picture</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q3" value="3">
+                <span>Supporting keyboard navigation</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="0">
+              <legend>4. What is CSS mainly used for?</legend>
+
+              <label>
+                <input type="radio" name="t10q4" value="0" required>
+                <span>Styling and layout</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q4" value="1">
+                <span>Storing website passwords</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q4" value="2">
+                <span>Replacing the HTML document</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q4" value="3">
+                <span>Sending email messages</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <fieldset data-answer="1">
+              <legend>5. What is JavaScript commonly used to add to a web page?</legend>
+
+              <label>
+                <input type="radio" name="t10q5" value="0" required>
+                <span>The domain registration</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q5" value="1">
+                <span>Interactivity and dynamic behavior</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q5" value="2">
+                <span>The HTML doctype</span>
+              </label>
+
+              <label>
+                <input type="radio" name="t10q5" value="3">
+                <span>The monitor resolution</span>
+              </label>
+
+              <p class="answer-note" hidden></p>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="submit">Check my score</button>
+              <button type="reset" class="secondary">Try again</button>
+            </div>
+
+            <p class="result" role="status" aria-live="polite"></p>
+          </form>
+        </details>
+
+      </div>
+    
+
+    <noscript>
+      <p class="instructions">
+        You can read and answer the questions without JavaScript.
+        Enable JavaScript to check your score.
+      </p>
+    </noscript>
+    <section id="html-css-topics" class="more-topics">
+
+      <p class="eyebrow">BUILD YOUR BASICS</p>
+      <h2>More beginner HTML &amp; CSS topics</h2>
+      <p class="muted">
+        Practise the building blocks of a web page and its design.
+      </p>
+
+      <div class="topic-grid">
+
+      <!-- Topic 11 -->
+      <details class="topic-card" id="html-comments-entities">
+
+        <summary>
+          <span class="topic-number">11</span>
+          <span class="topic-title">
+            HTML Comments &amp; Special Characters
+            <small>5 questions · Multiple choice</small>
+          </span>
+          <span class="open-icon" aria-hidden="true">+</span>
+        </summary>
+
+        <form class="quiz-form">
+
+          <fieldset data-answer="0">
+            <legend>1. Which is the correct way to write an HTML comment?</legend>
+            <label><input type="radio" name="t11q1" value="0" required> <span>&lt;!-- A comment --&gt;</span></label>
+            <label><input type="radio" name="t11q1" value="1"> <span>// A comment</span></label>
+            <label><input type="radio" name="t11q1" value="2"> <span>/* A comment */</span></label>
+            <label><input type="radio" name="t11q1" value="3"> <span>&lt;comment&gt;A comment&lt;/comment&gt;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="1">
+            <legend>2. How are HTML comments normally displayed?</legend>
+            <label><input type="radio" name="t11q2" value="0" required> <span>As a heading</span></label>
+            <label><input type="radio" name="t11q2" value="1"> <span>They are not displayed as page content</span></label>
+            <label><input type="radio" name="t11q2" value="2"> <span>As a button</span></label>
+            <label><input type="radio" name="t11q2" value="3"> <span>As a picture</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="2">
+            <legend>3. Which character reference displays a less-than sign?</legend>
+            <label><input type="radio" name="t11q3" value="0" required> <span>&amp;gt;</span></label>
+            <label><input type="radio" name="t11q3" value="1"> <span>&amp;amp;</span></label>
+            <label><input type="radio" name="t11q3" value="2"> <span>&amp;lt;</span></label>
+            <label><input type="radio" name="t11q3" value="3"> <span>&amp;copy;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="3">
+            <legend>4. Which character reference displays an ampersand?</legend>
+            <label><input type="radio" name="t11q4" value="0" required> <span>&amp;lt;</span></label>
+            <label><input type="radio" name="t11q4" value="1"> <span>&amp;gt;</span></label>
+            <label><input type="radio" name="t11q4" value="2"> <span>&amp;quot;</span></label>
+            <label><input type="radio" name="t11q4" value="3"> <span>&amp;amp;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="0">
+            <legend>5. Which character reference displays the copyright symbol?</legend>
+            <label><input type="radio" name="t11q5" value="0" required> <span>&amp;copy;</span></label>
+            <label><input type="radio" name="t11q5" value="1"> <span>&amp;space;</span></label>
+            <label><input type="radio" name="t11q5" value="2"> <span>&amp;right;</span></label>
+            <label><input type="radio" name="t11q5" value="3"> <span>&amp;copyrightsymbol;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Check my score</button>
+            <button type="reset" class="secondary">Try again</button>
+          </div>
+
+          <p class="result" role="status" aria-live="polite"></p>
+        </form>
+      </details>
+
+      <!-- Topic 12 -->
+      <details class="topic-card" id="html-containers-figures">
+
+        <summary>
+          <span class="topic-number">12</span>
+          <span class="topic-title">
+            HTML Containers &amp; Figures
+            <small>5 questions · Multiple choice</small>
+          </span>
+          <span class="open-icon" aria-hidden="true">+</span>
+        </summary>
+
+        <form class="quiz-form">
+
+          <fieldset data-answer="1">
+            <legend>1. Which element is commonly used as a generic block-level container?</legend>
+            <label><input type="radio" name="t12q1" value="0" required> <span>&lt;span&gt;</span></label>
+            <label><input type="radio" name="t12q1" value="1"> <span>&lt;div&gt;</span></label>
+            <label><input type="radio" name="t12q1" value="2"> <span>&lt;img&gt;</span></label>
+            <label><input type="radio" name="t12q1" value="3"> <span>&lt;br&gt;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="2">
+            <legend>2. Which element is a generic inline container for text?</legend>
+            <label><input type="radio" name="t12q2" value="0" required> <span>&lt;table&gt;</span></label>
+            <label><input type="radio" name="t12q2" value="1"> <span>&lt;main&gt;</span></label>
+            <label><input type="radio" name="t12q2" value="2"> <span>&lt;span&gt;</span></label>
+            <label><input type="radio" name="t12q2" value="3"> <span>&lt;section&gt;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="3">
+            <legend>3. Which element can group an image with its caption?</legend>
+            <label><input type="radio" name="t12q3" value="0" required> <span>&lt;input&gt;</span></label>
+            <label><input type="radio" name="t12q3" value="1"> <span>&lt;title&gt;</span></label>
+            <label><input type="radio" name="t12q3" value="2"> <span>&lt;meta&gt;</span></label>
+            <label><input type="radio" name="t12q3" value="3"> <span>&lt;figure&gt;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="0">
+            <legend>4. Which element provides a caption for a figure?</legend>
+            <label><input type="radio" name="t12q4" value="0" required> <span>&lt;figcaption&gt;</span></label>
+            <label><input type="radio" name="t12q4" value="1"> <span>&lt;captiontext&gt;</span></label>
+            <label><input type="radio" name="t12q4" value="2"> <span>&lt;labelled-image&gt;</span></label>
+            <label><input type="radio" name="t12q4" value="3"> <span>&lt;subtitle&gt;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="1">
+            <legend>5. Which element groups related controls inside a form?</legend>
+            <label><input type="radio" name="t12q5" value="0" required> <span>&lt;group&gt;</span></label>
+            <label><input type="radio" name="t12q5" value="1"> <span>&lt;fieldset&gt;</span></label>
+            <label><input type="radio" name="t12q5" value="2"> <span>&lt;figure&gt;</span></label>
+            <label><input type="radio" name="t12q5" value="3"> <span>&lt;span&gt;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Check my score</button>
+            <button type="reset" class="secondary">Try again</button>
+          </div>
+
+          <p class="result" role="status" aria-live="polite"></p>
+        </form>
+      </details>
+
+      <!-- Topic 13 -->
+      <details class="topic-card" id="css-selectors-syntax">
+
+        <summary>
+          <span class="topic-number">13</span>
+          <span class="topic-title">
+            CSS Selectors &amp; Syntax
+            <small>5 questions · Multiple choice</small>
+          </span>
+          <span class="open-icon" aria-hidden="true">+</span>
+        </summary>
+
+        <form class="quiz-form">
+
+          <fieldset data-answer="2">
+            <legend>1. What is the usual file extension for an external stylesheet?</legend>
+            <label><input type="radio" name="t13q1" value="0" required> <span>.html</span></label>
+            <label><input type="radio" name="t13q1" value="1"> <span>.js</span></label>
+            <label><input type="radio" name="t13q1" value="2"> <span>.css</span></label>
+            <label><input type="radio" name="t13q1" value="3"> <span>.jpg</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="3">
+            <legend>2. Which selector targets elements with class="card"?</legend>
+            <label><input type="radio" name="t13q2" value="0" required> <span>#card</span></label>
+            <label><input type="radio" name="t13q2" value="1"> <span>card()</span></label>
+            <label><input type="radio" name="t13q2" value="2"> <span>&lt;card&gt;</span></label>
+            <label><input type="radio" name="t13q2" value="3"> <span>.card</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="0">
+            <legend>3. Which selector targets the element with id="header"?</legend>
+            <label><input type="radio" name="t13q3" value="0" required> <span>#header</span></label>
+            <label><input type="radio" name="t13q3" value="1"> <span>.header</span></label>
+            <label><input type="radio" name="t13q3" value="2"> <span>header()</span></label>
+            <label><input type="radio" name="t13q3" value="3"> <span>*header</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="1">
+            <legend>4. Which is a correctly written CSS declaration?</legend>
+            <label><input type="radio" name="t13q4" value="0" required> <span>color = red</span></label>
+            <label><input type="radio" name="t13q4" value="1"> <span>color: red;</span></label>
+            <label><input type="radio" name="t13q4" value="2"> <span>&lt;color&gt;red&lt;/color&gt;</span></label>
+            <label><input type="radio" name="t13q4" value="3"> <span>red → color</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="2">
+            <legend>5. Which is the correct way to write a CSS comment?</legend>
+            <label><input type="radio" name="t13q5" value="0" required> <span>&lt;!-- A comment --&gt;</span></label>
+            <label><input type="radio" name="t13q5" value="1"> <span>// A comment</span></label>
+            <label><input type="radio" name="t13q5" value="2"> <span>/* A comment */</span></label>
+            <label><input type="radio" name="t13q5" value="3"> <span>&lt;comment&gt;A comment&lt;/comment&gt;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Check my score</button>
+            <button type="reset" class="secondary">Try again</button>
+          </div>
+
+          <p class="result" role="status" aria-live="polite"></p>
+        </form>
+      </details>
+
+      <!-- Topic 14 -->
+      <details class="topic-card" id="css-colours-text">
+
+        <summary>
+          <span class="topic-number">14</span>
+          <span class="topic-title">
+            CSS Colours &amp; Text
+            <small>5 questions · Multiple choice</small>
+          </span>
+          <span class="open-icon" aria-hidden="true">+</span>
+        </summary>
+
+        <form class="quiz-form">
+
+          <fieldset data-answer="3">
+            <legend>1. Which CSS property changes the colour of text?</legend>
+            <label><input type="radio" name="t14q1" value="0" required> <span>text-paint</span></label>
+            <label><input type="radio" name="t14q1" value="1"> <span>font-background</span></label>
+            <label><input type="radio" name="t14q1" value="2"> <span>text-style</span></label>
+            <label><input type="radio" name="t14q1" value="3"> <span>color</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="0">
+            <legend>2. Which property changes an element's background colour?</legend>
+            <label><input type="radio" name="t14q2" value="0" required> <span>background-color</span></label>
+            <label><input type="radio" name="t14q2" value="1"> <span>text-color</span></label>
+            <label><input type="radio" name="t14q2" value="2"> <span>font-color</span></label>
+            <label><input type="radio" name="t14q2" value="3"> <span>page-paint</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="1">
+            <legend>3. Which CSS property changes the size of text?</legend>
+            <label><input type="radio" name="t14q3" value="0" required> <span>text-weight</span></label>
+            <label><input type="radio" name="t14q3" value="1"> <span>font-size</span></label>
+            <label><input type="radio" name="t14q3" value="2"> <span>font-colour</span></label>
+            <label><input type="radio" name="t14q3" value="3"> <span>word-width</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="2">
+            <legend>4. Which property selects a typeface such as Arial?</legend>
+            <label><input type="radio" name="t14q4" value="0" required> <span>text-align</span></label>
+            <label><input type="radio" name="t14q4" value="1"> <span>font-size</span></label>
+            <label><input type="radio" name="t14q4" value="2"> <span>font-family</span></label>
+            <label><input type="radio" name="t14q4" value="3"> <span>line-height</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="3">
+            <legend>5. Which declaration centres the text inside an element?</legend>
+            <label><input type="radio" name="t14q5" value="0" required> <span>font-style: center;</span></label>
+            <label><input type="radio" name="t14q5" value="1"> <span>position: center;</span></label>
+            <label><input type="radio" name="t14q5" value="2"> <span>text-place: middle;</span></label>
+            <label><input type="radio" name="t14q5" value="3"> <span>text-align: center;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Check my score</button>
+            <button type="reset" class="secondary">Try again</button>
+          </div>
+
+          <p class="result" role="status" aria-live="polite"></p>
+        </form>
+      </details>
+
+      <!-- Topic 15 -->
+      <details class="topic-card" id="css-box-model">
+
+        <summary>
+          <span class="topic-number">15</span>
+          <span class="topic-title">
+            CSS Box Model &amp; Spacing
+            <small>5 questions · Multiple choice</small>
+          </span>
+          <span class="open-icon" aria-hidden="true">+</span>
+        </summary>
+
+        <form class="quiz-form">
+
+          <fieldset data-answer="0">
+            <legend>1. Which property adds space between content and its border?</legend>
+            <label><input type="radio" name="t15q1" value="0" required> <span>padding</span></label>
+            <label><input type="radio" name="t15q1" value="1"> <span>margin</span></label>
+            <label><input type="radio" name="t15q1" value="2"> <span>outline</span></label>
+            <label><input type="radio" name="t15q1" value="3"> <span>color</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="1">
+            <legend>2. Which property adds space outside an element's border?</legend>
+            <label><input type="radio" name="t15q2" value="0" required> <span>padding</span></label>
+            <label><input type="radio" name="t15q2" value="1"> <span>margin</span></label>
+            <label><input type="radio" name="t15q2" value="2"> <span>font-size</span></label>
+            <label><input type="radio" name="t15q2" value="3"> <span>background</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="2">
+            <legend>3. Which declaration adds a solid black border 1 pixel thick?</legend>
+            <label><input type="radio" name="t15q3" value="0" required> <span>border: black only;</span></label>
+            <label><input type="radio" name="t15q3" value="1"> <span>outline-color: solid;</span></label>
+            <label><input type="radio" name="t15q3" value="2"> <span>border: 1px solid black;</span></label>
+            <label><input type="radio" name="t15q3" value="3"> <span>line: black 1;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="3">
+            <legend>4. Which CSS property sets an element's width?</legend>
+            <label><input type="radio" name="t15q4" value="0" required> <span>height</span></label>
+            <label><input type="radio" name="t15q4" value="1"> <span>font-size</span></label>
+            <label><input type="radio" name="t15q4" value="2"> <span>line-height</span></label>
+            <label><input type="radio" name="t15q4" value="3"> <span>width</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="0">
+            <legend>5. With box-sizing: border-box, what does the specified width include?</legend>
+            <label><input type="radio" name="t15q5" value="0" required> <span>Content, padding and border</span></label>
+            <label><input type="radio" name="t15q5" value="1"> <span>Only the text</span></label>
+            <label><input type="radio" name="t15q5" value="2"> <span>Content and margins only</span></label>
+            <label><input type="radio" name="t15q5" value="3"> <span>The entire browser window</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Check my score</button>
+            <button type="reset" class="secondary">Try again</button>
+          </div>
+
+          <p class="result" role="status" aria-live="polite"></p>
+        </form>
+      </details>
+
+      <!-- Topic 16 -->
+      <details class="topic-card" id="css-layout-basics">
+
+        <summary>
+          <span class="topic-number">16</span>
+          <span class="topic-title">
+            CSS Layout &amp; Responsive Design
+            <small>5 questions · Multiple choice</small>
+          </span>
+          <span class="open-icon" aria-hidden="true">+</span>
+        </summary>
+
+        <form class="quiz-form">
+
+          <fieldset data-answer="1">
+            <legend>1. Which declaration turns an element into a flex container?</legend>
+            <label><input type="radio" name="t16q1" value="0" required> <span>position: flex;</span></label>
+            <label><input type="radio" name="t16q1" value="1"> <span>display: flex;</span></label>
+            <label><input type="radio" name="t16q1" value="2"> <span>layout: flex;</span></label>
+            <label><input type="radio" name="t16q1" value="3"> <span>float: flex;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="2">
+            <legend>2. Which declaration arranges flex items in a vertical column?</legend>
+            <label><input type="radio" name="t16q2" value="0" required> <span>text-align: column;</span></label>
+            <label><input type="radio" name="t16q2" value="1"> <span>display: vertical;</span></label>
+            <label><input type="radio" name="t16q2" value="2"> <span>flex-direction: column;</span></label>
+            <label><input type="radio" name="t16q2" value="3"> <span>position: column;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="3">
+            <legend>3. Which declaration turns an element into a grid container?</legend>
+            <label><input type="radio" name="t16q3" value="0" required> <span>position: grid;</span></label>
+            <label><input type="radio" name="t16q3" value="1"> <span>layout: table;</span></label>
+            <label><input type="radio" name="t16q3" value="2"> <span>float: grid;</span></label>
+            <label><input type="radio" name="t16q3" value="3"> <span>display: grid;</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="0">
+            <legend>4. Which property adds spacing between grid or flex items?</legend>
+            <label><input type="radio" name="t16q4" value="0" required> <span>gap</span></label>
+            <label><input type="radio" name="t16q4" value="1"> <span>color</span></label>
+            <label><input type="radio" name="t16q4" value="2"> <span>font-family</span></label>
+            <label><input type="radio" name="t16q4" value="3"> <span>opacity</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <fieldset data-answer="1">
+            <legend>5. Which CSS rule applies styles when the browser window meets a condition?</legend>
+            <label><input type="radio" name="t16q5" value="0" required> <span>@font-face</span></label>
+            <label><input type="radio" name="t16q5" value="1"> <span>@media</span></label>
+            <label><input type="radio" name="t16q5" value="2"> <span>@import-only</span></label>
+            <label><input type="radio" name="t16q5" value="3"> <span>@window-size</span></label>
+            <p class="answer-note" hidden></p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit">Check my score</button>
+            <button type="reset" class="secondary">Try again</button>
+          </div>
+
+          <p class="result" role="status" aria-live="polite"></p>
+        </form>
+      </details>
+
+      </div>
+    </section>
+  </main>
+
+ <footer class="site-footer">
+
+  <div class="footer-content">
+
+    <section>
+      <h2 class="footer-logo">&lt;/&gt; Web Quiz</h2>
+
+      <p class="footer-text">
+        Learn, practise and improve your web technology skills.
+      </p>
+
+      <p class="footer-text">
+        A first-semester project built with HTML, CSS and JavaScript.
+      </p>
+    </section>
+
+    <nav class="footer-links" aria-label="Footer quiz links">
+      <h3>Explore</h3>
+
+      <a href="index.html">Quiz topics</a>
+      <a href="index.html#how-to-play">How to play</a>
+    </nav>
+
+    <nav class="footer-links" aria-label="Footer account links">
+      <h3>Account</h3>
+
+      <a href="login.html">Sign in</a>
+      <a href="register.html">Register</a>
+    </nav>
+
+  </div>
+
+  <p class="footer-bottom">
+    &copy; 2026 Web Quiz. Made for learning.
+  </p>
+
+</footer>
+
+</body>
+</html>
