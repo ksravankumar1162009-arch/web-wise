@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in | Web Wise</title>
+
+  <link rel="stylesheet" href="auth.css">
+  <script src="auth.js" defer></script>
+</head>
+
+<body class="signin-page">
+
+  <header class="site-header">
+    <a class="logo" href="login.html">
+      <span class="logo-code">&lt;/&gt;</span> Web Wise
+    </a>
+    <span class="signin-header-note">Learn something new today.</span>
+  </header>
+
+  <main class="signin-layout">
+
+    <section class="signin-intro">
+      <p class="eyebrow">LEARN • PRACTISE • IMPROVE</p>
+
+      <h1>
+        Small steps.<br>
+        <span>Stronger web skills.</span>
+      </h1>
+
+      <p>
+        Practise your HTML and web knowledge.
+        Choose a topic, answer questions and improve your skills.
+      </p>
+
+      <ul class="signin-features">
+        <li><span aria-hidden="true">✓</span> Beginner-friendly topics</li>
+        <li><span aria-hidden="true">✓</span> Multiple-choice questions</li>
+        <li><span aria-hidden="true">✓</span> Instant scores and feedback</li>
+      </ul>
+    </section>
+
+    <section class="signin-card" aria-labelledby="signin-heading">
+      <div class="signin-icon" aria-hidden="true">&lt;/&gt;</div>
+
+      <h2 id="signin-heading">Welcome to Web Wise</h2>
+      <p class="muted">Sign in to start practising.</p>
+
+      <p id="registration-success" class="auth-success"
+         role="status" hidden>
+        Registration complete! Sign in with your new details.
+      </p>
+
+      <form id="signin-form" class="signin-form">
+
+        <label for="signin-email">Email address</label>
+        <input
+          type="email"
+          id="signin-email"
+          autocomplete="username"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label for="signin-password">Password</label>
+        <input
+          type="password"
+          id="signin-password"
+          autocomplete="current-password"
+          placeholder="Enter your demo password"
+          required
+        >
+
+        <p class="signin-help">
+          Sample login:<br>
+          Email: <strong>student@webquiz.com</strong><br>
+          Password: <strong>quiz123</strong>
+        </p>
+
+        <p id="signin-error" class="signin-error" role="alert"></p>
+
+        <button type="submit">Sign in →</button>
+      </form>
+
+      <p class="auth-switch">
+        New here? <a href="register.html">Create an account</a>
+      </p>
+
+      <p class="signin-card-footer">
+        Classroom demo. Use made-up details, not real passwords.
+      </p>
+
+      <noscript>
+        <p>Please enable JavaScript to use this demo.</p>
+      </noscript>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&lt;/&gt; Web Wise</p>
+  </footer>
+
+</body>
+</html>
